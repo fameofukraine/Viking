@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <nav class="menu">
+          <button class="menu__btn">
+          <span></span>
+          </button>
+            <div class="menu__container">
+                <a href="index.html " class="page-logo">
+                    <img src="img/seasons-logo.png" alt="logo">
+                </a>
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a href="season-1.html" class="menu__list-link">1 сезон</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="seasons-2.html" class="menu__list-link">2 сезон</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="seasons-3.html" class="menu__list-link">3 сезон</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="seasons-4.html" class="menu__list-link">4 сезон</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="#" class="menu__list-link menu__list-link--active">5 сезон</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a href="seasons-6.html" class="menu__list-link">6 сезон</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="season-info">
+            <div class="season-info__num">
+                05
+                <span>сезон</span>
+            </div>
+            <div class="season-info__text">
+                <p>
+                  В Англії король Етельвульф, його сини і воїн-єпископ Хехмунд борються з данськими загарбниками на чолі з Іваром Безкосним, який показує себе видатним стратегом. У Середземному морі Бйорн продовжує слідувати своїй долі. Він, Хальвдан і Сінрікьо вступають в контакт з правителями Сицилії і Іфрікиї, що ледь не варто їм життів. Залишивши товаришів, Флокі відкриває в Північній Атлантиці безлюдний острів і надалі населяє його людьми. Сини Рагнара Лодброка сваряться між собою. Конунг Харальд Прекрасноволосий, Івар і Хвітсерк об'єднуються з метою захопити Каттегат, а Лагерта разом з Бйoрном і Уббе бореться проти їхнього союзу.
+                </p>
+                <p>
+                  Івар стає конунгом Каттегату, який займає разом з Гаральдом. Зазнавши поразки, Лагерта, Бйорн і Уббе залишають Скандинавію і постають перед королем Альфредом в Вессексі. За прикладом імператора Карла монарх погоджується надати їм притулок, якщо вони будуть захищати його країну від норманської військової агресії. Принц Етельред не може пробачити несправедливого воцаріння Альфреда і бере участь в змові проти свого брата. Після підпалу капища Тора події в Ісландії все більш загострюються. Бйорн не залишає планів по поверненню рідної землі і збирається повернутися, щоб відбити Каттегат у Івара без кістки. Дізнавшись про це, Івар зміцнюється в місті і готується тримати оборону.
+                </p>
+            </div>
+        </div>
+    </header>
+    <section class="seasons section-page">
+      <div class="container">
+        <h3 class="title">
+          Дивіться прямо зараз
+        </h3>
+        <iframe width="860" height="684" src="http://kinotochka.co/embed/8386" frameborder="0" allowfullscreen scrolling="no" style="width: 100%"></iframe>
+        <div class="pnseasons">
+          <a href="seasons-4.html">
+            Попередній сезон
+          </a>
+          <a href="seasons-6.html">
+            Наступний сезон
+          </a>
+        </div>
+      </div>
+  </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="copy">
+          Серіал «Вікінги». Правами на серіал володіє канал History.
+          <!-- <img src="img/qu.png" alt="question" height="34px" width="34px"> -->
+        </p>
+        <p id="copy__quest">
+          Маєте питання?
+        </p>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            
+            <div class="container__form">
+              <form name="form" action="mail.php" method="post" id="form_message">
+                <span class="close">&times;</span>
+                <label for="fname" style="color: #000;">Ваше ім'я*</label><br>
+                <input class="input" name="name" type="text"/><br>
+  
+                <label for="lname" style="color: #000;">E-mail*</label><br>
+                <input class="input" name="email" type="text"/> <br>
+  
+                <label for="subject" style="color: #000;">Тема</label><br>
+                <textarea id="subject" name="message" placeholder="Напишіть тему проблеми.." style="height:200px"></textarea>
+            
+                <input id="submit" type="submit" value="Submit">
+            
+              </form>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
